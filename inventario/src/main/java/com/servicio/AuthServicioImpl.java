@@ -77,6 +77,7 @@ public class AuthServicioImpl implements AuthServicio {
 		
 	}
 	
+	@Override
 	public AuthenticationResponse login (LoginRequest loginRequest) {
 		
 		Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
